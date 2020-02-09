@@ -5,6 +5,9 @@ class PostsController < ApplicationController
 
 	def show
 		@post = Post.find(params[:id])
+		# byebug
+		# @category = @post.category.name
+		# Category.find_by(name: @)
 	end
 
 	def new
